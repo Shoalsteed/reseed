@@ -168,11 +168,12 @@ Place your TLS-certificate (*.crt) in i2p/certificates/ssl/
 Visit with your web browser http://localhost:7657/configreseed
 Enter your new reseed-url and delete all others, hit "Save changes and reseed now"
 Check the I2P logs for "Reseed got 77 router infos from ... with 0 errors, Reseed complete, 77 received"
+
 9. Send Us Your Information
 Domain/URL/Port
 su3-signing certificate
 TLS certificate (if self signed)
-Send an email: zzz at mail.i2p, PGP signed 
+Send an email: security at get.i2p.net, PGP signed 
 
 Go Solution - Detailed Instructions
 ===================================
@@ -242,7 +243,7 @@ Output:
 2015/03/15 12:28:35 HTTPS server started on 0.0.0.0:8443
 So you can now test to reach the server at port 8443, see a previous chapter about proper testing.
 
-Some remarks:
+Please Note:
 
 Don't run the server daemon as root
 Every port between 1024 and 49151 is fine for I2P.
@@ -253,7 +254,7 @@ Add a logrotate for the logfiles, since they grow big :-(
 Logfiles can be used by fail2ban
 Both of the certificates (*.crt) will need to be sent to the reseed maintainer in order for your reseed server to be included in the standard I2P package.
 Add a proper startup script, to run the reseed server, see next chapter
-4. Draft for Startup Script "seedserver"
+Draft for Startup Script "seedserver"
 The reseed server should be started automatically, so you need a init.d or some sort of startscript, here named as "seedserver". This is only a very first draft for a simple startscript (it could be done better :-))
 
 Login as I2P user:
