@@ -10,8 +10,8 @@ Eine genaue (technische) Beschreibung findet man auf https://geti2p.net/spec/upd
 
 Vorgängerversionen
 ------------------
-Bevor es die SU3 Datei gab, gab es bereits die .sud sowie die .su2 Datei.
-Allerdings wiesen diese Dateien Fehler. Zu diesen gehörten, dass es keine Magic
+Bevor es das SU3 Dateiformat gab, gab es bereits das .sud sowie die .su2 Dateiformat.
+Allerdings wiesen diese Dateiformate Fehler auf. Zu diesen gehörten, dass es keine Magic
 Number gab und der Signer (siehe unten) nicht angegeben wurde, wodurch alle
 bekannten Schlüssel ausprobiert werden mussten. Des Weiteren fehlten noch recht
 viele Metadaten.
@@ -55,7 +55,6 @@ In den Metadaten wird also angegeben, welche dieser Arten verwendet wird.
 	* XML Dateien
 	* HTML Dateien
 	* XML Dateien komprimiert mit GnuZip
-	* TXT Dateien komprimiert mit GnuZip
     * Text (txt) Dateien komprimiert mit GnuZip
 * Die Version. Darunter versteht man eine Zahl, welche ein Datum angibt.
 Normalerweise ist das das Datum, wann die SU3 Datei erstellt wurden ist.
@@ -200,7 +199,8 @@ ist und hello.su3 die SU3 Datei, von welcher die Signatur verifiziert werden sol
 ### Inhalt auspacken
 Dies kann man mit folgendem Befehl tun:
 	java -jar lib/i2p.jar su3file extract -x hello.su3
--x gibt an, dass man keine Verifizierung der Signatur möchte. Wenn man doch eine möchte, kann man wie bei Signatur verifizieren den Parameter -k benutzen. hello.su3 ist die Datei, von der der Inhalt ausgepackt werden soll.
+-x gibt an, dass man keine Verifizierung der Signatur möchte. Wenn man doch eine
+möchte, kann man wie bei Signatur verifizieren den Parameter -k benutzen. hello.su3 ist die Datei, von der der Inhalt ausgepackt werden soll.
 
 
 ---
