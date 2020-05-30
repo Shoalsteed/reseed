@@ -3,7 +3,7 @@ SU3 files
 
 What is a SU3 file?
 -------------------
-An SU3 file contains several objects. On the one hand, an SU3 file contains
+An SU3 file (_s_igned _u_pdate) contains several objects. On the one hand, an SU3 file contains
 another file of any format, metadata (date, version, ...) and a signature to
 verify the file and the metadata. A detailed (technical) description can be
 found at https://geti2p.net/spec/updates.

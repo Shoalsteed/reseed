@@ -3,7 +3,7 @@ SU3 Dateien
 
 Was ist eine SU3 Datei?
 -----------------------
-Eine SU3 Datei beinhaltet mehrere Objekte. Zum einem beinhaltet eine SU3 Datei
+Eine SU3 Datei (_s_igned _u_pdate) beinhaltet mehrere Objekte. Zum einem beinhaltet eine SU3 Datei
 eine andere Datei beliebigen Formats, Metadaten (Datum, Version, ...) und eine
 Signatur, um die Datei und die Metadaten zu verifizieren.
 Eine genaue (technische) Beschreibung findet man auf https://geti2p.net/spec/updates.
